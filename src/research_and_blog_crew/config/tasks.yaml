@@ -6,6 +6,9 @@ report_task:
   expected_output: >
     2000 words long report on the topic: {topic}
   agent: report_generator
+  llm:
+    provider: google
+    model: gemini-1.5-pro
 
 blog_writing_task:
   description: >
@@ -15,3 +18,6 @@ blog_writing_task:
     500 words long blog post on topic: {topic}. The blog should be well structured
     with a creative and fun heading.
   agent: blog_writer
+  llm:
+    provider: google
+    model: gemini-1.5-pro

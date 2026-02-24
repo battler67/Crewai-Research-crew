@@ -1,6 +1,9 @@
 import streamlit as st
+import os 
 from datetime import datetime
 from src.research_and_blog_crew.crew import ResearchAndBlogCrew
+
+os.environ["CREWAI_TELEMETRY_ENABLED"] = "false"
 
 st.set_page_config(page_title="AI Research Crew", layout="wide")
 

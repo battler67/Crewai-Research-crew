@@ -8,6 +8,9 @@ report_generator:
     in the past. Your reports are detailed covering a multi-dimensional view about the topic and is 
     included along with current and future trends, is simple to read with good analogies 
     where ever applicable.
+  llm:
+    provider: google
+    model: gemini-1.5-pro
 
 blog_writer:
   role: >
@@ -17,3 +20,6 @@ blog_writer:
   backstory: >
     You are an expert in creating blog on {topic}. Your blogs are fun to read, 
     full of facts presented in a fun and simple way, even a 5 year old can understand.
+  llm:
+    provider: google
+    model: gemini-1.5-pro
